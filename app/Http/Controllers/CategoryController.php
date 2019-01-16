@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\category;
+use App\Blogpost;
 
 class CategoryController extends Controller
 {
@@ -31,17 +33,12 @@ class CategoryController extends Controller
         return view('backend.categories.view_category', compact('categories'));
     }
 
-    public function deleteCategory($id = null){
-        if(!empty($id)){
-           Category::where(['id' => $id])->delete();
-           return redirect()->route('view.category')->with('flash_message_warning', 'Catgeory Deleted');
-        }
-    }
+    
 
     public function editCategory(Request $request, $id){
         if ($request->isMethod('post')) {
             $data = $request->all();
-
+            
             Category::where(['id'=> $id ])->update([ 'parent_id'=>$data['parent_id'], 'name'=>$data['name'], 'slug' =>str_slug($data['name'])
         ]);
            return redirect()->route('view.category')->with('flash_message_success','category Updated Successfully');
@@ -49,5 +46,13 @@ class CategoryController extends Controller
          $category = Category::where(['id' => $id])->first();
         $levels = Category::where(['parent_id' => 0])->get();
         return view ('backend.categories.edit_category')->with(compact('category', 'levels'));
+    }
+
+
+    public function deleteCategory($id = null){
+        if(!empty($id)){
+           Category::where(['id' => $id])->delete();
+           return redirect()->route('view.category')->with('flash_message_warning', 'Catgeory Deleted Successfully');
+        }
     }
 }

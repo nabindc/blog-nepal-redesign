@@ -25,12 +25,7 @@
 
 
 
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Minimal </a></li>
-                                <li><a href="index2.html">Analytical</a></li>
-                            </ul>
-                        </li>
+                        <li> <a href="{{route('admin.dashboard')}}"><i class="icon-speedometer"></i><button class="hide-menu btn btn-danger" >Dashboard</button></a>
 
                     <!-- Category section -->
 
@@ -38,6 +33,13 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="{{route('add.category')}}">Add Category </a></li>
                                 <li><a href="{{route('view.category')}}">View Category</a></li>
+                            </ul>
+                        </li>
+
+                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">BlogPost <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('add.blogpost')}}">Add Blogs </a></li>
+                                <li><a href="{{route('view.blogpost')}}">View Blogs</a></li>
                             </ul>
                         </li>
 

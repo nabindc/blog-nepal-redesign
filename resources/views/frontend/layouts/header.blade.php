@@ -1,96 +1,76 @@
-	<body>
-
-	<nav id="fh5co-main-nav" role="navigation">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
-		<div class="js-fullheight fh5co-table">
-			<div class="fh5co-table-cell js-fullheight">
-				<h1 class="text-center"><a class="fh5co-logo" href="index.html">Words</a></h1>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="work.html">Work</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<p class="fh5co-social-icon">
-					<a href="#"><i class="icon-twitter2"></i></a>
-					<a href="#"><i class="icon-facebook2"></i></a>
-					<a href="#"><i class="icon-instagram"></i></a>
-					<a href="#"><i class="icon-dribbble2"></i></a>
-					<a href="#"><i class="icon-youtube"></i></a>
-				</p>
-			</div>
-		</div>
-	</nav>
-	
-	<div id="fh5co-page">
-		<header>
-			<div class="container">
-				<div class="fh5co-navbar-brand">
-					<div class="row">
-						<div class="col-xs-6">
-							<h1 class="text-left"><a class="fh5co-logo" href="index.html"><span>Blog</span> Words <span>WordPress Theme</span></a></h1>
-						</div>
-						<div class="col-xs-6">
-							<p class="fh5co-social-icon text-right">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
+ <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="{{asset('public/frontend/img/logo.png')}}" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="{{asset('public/frontend/img/personal.jpg')}}" alt="">
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello Everybody, i am</h6>
+									<h3>Donald McKinney</h3>
+									<h4>Junior UI/UX Developer</h4>
+									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+									<ul class="list basic_info">
+										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
+										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
+										<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 				</div>
-			</div>
-		</header>
-		<aside id="fh5co-hero" class="js-fullheight">
-			<div class="flexslider js-fullheight">
-				<ul class="slides">
-			   	<li style="background-image: url({{asset('public/frontend/images/slide_1.jpg')}});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span>Jan. 07, 2016</span>
-			   						<h2>Create A Motivational Template</h2>
-			   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({{asset('public/frontend/images/slide_2.jpg')}});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span>Jan. 07, 2016</span>
-				   					<h2>Be Creative, Be Good To Your Work</h2>
-				   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-				   				</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({{asset('public/frontend/images/slide_3.jpg')}});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span>Jan. 06, 2016</span>
-				   					<h2>Inspirational Website Of Year 2017</h2>
-				   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				   				</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			  	</ul>
-		  	</div>
-		</aside>
+            </div>
+        </section>

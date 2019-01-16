@@ -1,81 +1,75 @@
-<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<h3 class="section-title">About Words</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-						</div>
-						
-						<div class="col-md-3 col-md-push-1">
-							<h3 class="section-title">Links</h3>
-							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Work</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">API</a></li>
-								<li><a href="#">FAQ / Contact</a></li>
-							</ul>
-						</div>
-
-						<div class="col-md-3">
-							<h3 class="section-title">Information</h3>
-							<ul>
-								<li><a href="#">Terms &amp; Condition</a></li>
-								<li><a href="#">License</a></li>
-								<li><a href="#">Privacy &amp; Policy</a></li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3">
-							<h3 class="section-title">Newsletter</h3>
-							<p>Subscribe for our newsletter</p>
-							<form class="form-inline" id="fh5co-header-subscribe">
-								<div class="row">
-									<div class="col-md-12 col-md-offset-0">
-										<div class="form-group">
-											<input type="text" class="form-control" id="email" placeholder="Enter your email">
-											<button type="submit" class="btn btn-default"><i class="icon-paper-plane"></i></button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="row copy-right">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icon">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Words</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="http://blog.gessato.com/" target="_blank">Gessato</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-	</div>
-
-	<!-- jQuery -->
-	<script src="{{asset('public/frontend/js/jquery.min.js')}}"></script>
-	<!-- jQuery Easing -->
-	<script src="{{asset('public/frontend/js/jquery.easing.1.3.js')}}"></script>
-	<!-- Bootstrap -->
-	<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
-	<!-- Waypoints -->
-	<script src="{{asset('public/frontend/js/jquery.waypoints.min.js')}}"></script>
-	<!-- Counters -->
-	<script src="{{asset('public/frontend/js/jquery.countTo.js')}}"></script>
-	<!-- Flexslider -->
-	<script src="{{asset('public/frontend/js/jquery.flexslider-min.js')}}"></script>
-
-	<!-- Main JS (Do not remove) -->
-	<script src="{{asset('public/frontend/js/main.js')}}"></script>
-
-	</body>
+ <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{{asset('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
+        <script src="{{asset('public/frontend/js/popper.js')}}"></script>
+        <script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('public/frontend/js/stellar.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+        
+        <script src="{{asset('public/frontend/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/isotope/isotope.pkgd.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/popup/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('public/frontend/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/counter-up/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset('public/frontend/vendors/counter-up/jquery.counterup.min.js')}}"></script>
+        <script src="{{asset('public/frontend/js/mail-script.js')}}"></script>
+        <script src="{{asset('public/frontend/js/theme.js')}}"></script>
+    </body>
 </html>

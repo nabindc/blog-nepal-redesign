@@ -14,9 +14,9 @@
 }
 
 body {
-  background-image: url({{asset('public/backend/assets/images/background/backgroundn.png')}});
+  background-image: url({{asset('public/backend/assets/images/background/login-register.jpg')}});
     
-   background-size:full;                    
+   background-size:100%;                    
     background-repeat: no-repeat;
     background-position: center center; 
 }
