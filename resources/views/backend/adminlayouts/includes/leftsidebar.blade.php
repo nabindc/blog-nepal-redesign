@@ -27,6 +27,18 @@
 
                         <li> <a href="{{route('admin.dashboard')}}"><i class="icon-speedometer"></i><button class="hide-menu btn btn-danger" >Dashboard</button></a>
 
+
+                    <!-- Site header Section -->
+                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">Site Header <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('create.site')}}">Add SiteInfo </a></li>
+                                <li><a href="{{route('index.site')}}">View SiteInfo</a></li>
+                            </ul>
+                        </li>
+
+
+
+
                     <!-- Category section -->
 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Category <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>

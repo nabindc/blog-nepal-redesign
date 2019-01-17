@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'IndexController@index')->name('index');
+Route::get('/all-blog-posts', 'IndexController@viewAllBlogPost')->name('view.allblogposts');
+Route::get('/single-blog-post/{slug}', 'IndexController@viewSingleBlogPost')->name('view.singleblogposts');
+
+
 
 Auth::routes();
 
@@ -24,6 +26,14 @@ Route::group(['middleware' => ['auth']], function(){
 Route::get('/admin/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
 Route::get('/admin/profile/{id}', 'AdminController@profile')->name('profile');
 Route::post('/admin/profile/update/{id}', 'AdminController@update_profile')->name('update.profile');
+
+// routes for site Controller
+Route::get('/admin/admin_site', 'SiteController@create')->name('create.site');
+	Route::post('/admin/admin_store', 'SiteController@store')->name('store.site');
+	Route::get('/admin/view_site', 'SiteController@index')->name('index.site');
+	Route::get('/admin/edit_site/{id}', 'SiteController@edit')->name('edit.site');
+	Route::post('/admin/update_site/{id}', 'SiteController@update')->name('update.site');
+	Route::get('/admin/delete_site/{id}', 'SiteController@delete')->name('delete.site');
 
 // routes for Categories
 Route::match(['get','post'], '/admin/add_category', 'CategoryController@addCategory')->name('add.category');

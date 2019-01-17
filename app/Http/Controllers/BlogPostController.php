@@ -31,7 +31,7 @@ class BlogPostController extends Controller
     				$small_image_path = 'public/backend/uploads/blogs/small/'.$filename;
 
     				// resizing the image file
-    				Image::make($image_tmp)->resize(600,600)->save($large_image_path);
+    				Image::make($image_tmp)->save($large_image_path);
     				Image::make($image_tmp)->resize(300,300)->save($small_image_path);
 
     				$blogpost->image = $filename;
@@ -80,7 +80,7 @@ class BlogPostController extends Controller
                     $small_image_path = 'public/backend/uploads/blogs/small/'.$filename;
 
                     // resizing the image file
-                    Image::make($image_tmp)->resize(600,600)->save($large_image_path);
+                    Image::make($image_tmp)->save($large_image_path);
                     Image::make($image_tmp)->resize(300,300)->save($small_image_path);
                     
 
