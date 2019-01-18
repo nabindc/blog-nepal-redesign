@@ -9,13 +9,13 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">Site Content</h4>
+                        <h4 class="text-themecolor">About Content</h4>
                     </div>
                     <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                                <li class="breadcrumb-item active">content</li>
+                                <li class="breadcrumb-item active"> Create About</li>
                             </ol>
                             <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
                         </div>
@@ -66,22 +66,5 @@
                         
                     </div>
                 </div></div></div>
-                <!-- .row -->
-              
-                <!-- /.row -->
-                <!-- .row -->
                 
-                <!-- /.row -->
-                <!-- .row -->
-               
-                <!-- ============================================================== -->
-                <!-- End Page Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-             
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
 @endsection

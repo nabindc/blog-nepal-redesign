@@ -505,11 +505,7 @@ header.type-1 nav ul li.hassub .submenu li:last-child{
 /*------------------------ 2 Home Section ------------------------*/	
 
 .home{
-  background: url(../images/home-bg.jpg);
-	background-size: cover;
-	width: 100%;
-	position: relative;
-  display: table
+  
 }
 
 .home.type-3{

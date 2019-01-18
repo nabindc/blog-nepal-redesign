@@ -37,6 +37,34 @@
                         </li>
 
 
+                        <!-- AboutSite section -->
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">AboutSite <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('create.about')}}">Add AboutSite </a></li>
+                                <li><a href="{{route('index.about')}}">View AboutSite</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <!-- Services Section  -->
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">Services  <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('create.service')}}">Add Services </a></li>
+                                <li><a href="{{route('index.service')}}">View Services</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Contact Section -->
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">Contacts <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('create.contact')}}">Add Contact </a></li>
+                                <li><a href="{{route('index.contact')}}">View Contact</a></li>
+                            </ul>
+                        </li>
+
+
+
 
 
                     <!-- Category section -->
@@ -55,7 +83,20 @@
                             </ul>
                         </li>
 
+                         <!-- Contact Message  Section -->
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">Messages <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('view.messages')}}">View Messages</a></li>
+                            </ul>
+                        </li>
 
+                        <!-- social section -->
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-files"></i><span class="hide-menu">Social Links <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{route('create.social')}}">Add Social Links </a></li>
+                                <li><a href="{{route('index.social')}}">View Social Links</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </nav>

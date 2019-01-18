@@ -1,81 +1,126 @@
 @extends('frontend.layouts.front_design')
 @section('content')
+<body> 
+    
+ <!-- Preloading --> 
+<div class="preloader">
+    <div class="sh-wave-loader">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="60px" viewBox="5 0 80 60">
+        <path class="wave" fill="none" stroke="#f02044" stroke-width="3" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15">
+        </path>
+      </svg>
+    </div>
+</div>
 
-    <!-- ABOUT SECTION
-    ================================================== -->
-    <section id="about" data-midnight="white" class="about type-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="section-title bottom_30 top_45">
-                        <span>ABOUT OUR AGENCY </span>
-                        <h2 class="title">We are working on web design, <br> branding and software.</h2>
+    <div class="wrapper">
+
+    <header class="type-1">
+        <a class="logo float-left"><img src="{{asset('public/frontend/images/whitelogo.png')}}" alt="" height="16"></a>
+        <nav class="nav float-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li ><a href="#about">About</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header> 
+
+    <header class="type-1 fixed">
+        <a class="logo float-left"><img src="{{asset('public/frontend/images/mylogo.png')}}" alt="" height="16"></a>
+        <nav class="nav float-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+        
+	<!-- HOME SECTION
+	================================================== -->
+	<section id="home" class="home" style="background: url({{asset('public/backend/sites/'.$sites->image)}}); background-size: cover; width: 100%; position: relative; display: table"> 
+		<div class="home-content">
+			<div class="container">
+				<span class="little-text wow fadeInUp" data-wow-delay="0.1s">{{$sites->title}}</span>
+                <h1 class="title wow fadeInUp" data-wow-delay="0.1s">{{$sites->sub_title}}</h1>
+				<p class="wow fadeInUp" data-wow-delay="0.1s">{{$sites->content}}</p>
+                <!-- Down Icon -->
+                <a href="#" class="down-icon wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="icon-circle"></div>
+                    <div class="icon">
+                        <i class="fas fa-angle-down"></i>
                     </div>
-                    <p>For instance, whenever I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating their breakfasts.  </p><br>
-                    <a href="https://www.youtube.com/watch?v=M-M3rdL_WLQ" class="about-video popup-youtube top_30"><i class="fa fa-play"></i> OUR PRESENTATION </a>
+                </a>
+			</div>
+			<div class="svg-wave">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="248" viewBox="0 0 3600 248">
+				  <path d="M3601,31.227S2736.31,201.97,1661,72.2C547.345-62.2,0,32.227,0,32.227V343H3602Z"/>
+				</svg>
+			</div>
+		</div>
+	</section>
 
+	<!-- ABOUT SECTION
+	================================================== -->
+	<section id="about" data-midnight="white" class="about type-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text wow fadeInUp" data-wow-delay="0.1s">
+					<div class="section-title bottom_30 top_45">
+						<span>{{$aboutme->title}}</span>
+						<h2 class="title">{{$aboutme->sub_title}}</h2>
+					</div>
+					<p>&hearts;&hearts;&hearts; {{$aboutme->content}}<br>....&hearts;....Thank You....&hearts;....</p><br>
+					<a href="{{$aboutme->video}}" class="about-video popup-youtube top_30"><i class="fa fa-play"></i> MY PRESENTATION </a>
+
+				</div>
+				<div class="col-md-6 image wow fadeInUp" data-wow-delay="0.1s">
+					<img src="{{asset('public/backend/sites/large/'.$aboutme->image)}}" alt="">
+				</div>
+			</div>
+		</div>
+
+
+		<!-- What we do -->
+		<div class="container top_120 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title padding_20 text-center">
+                    <span><h2> &hearts; &hearts; &hearts; What I DO &hearts; &hearts; &hearts;</h2></span>
                 </div>
-                <div class="col-md-6 image wow fadeInUp" data-wow-delay="0.1s">
-                    <img src="{{asset('public/frontend/images/about-1.jpg')}}" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- What we do -->
-        <div class="container top_120 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="owl-carousel owl-theme features" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1"  data-wow-delay="0.1s">
-                <div class="item service text-center">
-                    <i class="icon-desktop"></i>
-                    <h3 class="title top_15 bottom_15">Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-tools"></i>
-                    <h3 class="title top_15 bottom_15">Branding Identity</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-paintbrush"></i>
-                    <h3 class="title top_15 bottom_15">Graphic Design</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-phone"></i>
-                    <h3 class="title top_15 bottom_15">Mobile Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-camera"></i>
-                    <h3 class="title top_15 bottom_15">Photography</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-lightbulb"></i>
-                    <h3 class="title top_15 bottom_15">Creative Design</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-                <div class="item service text-center">
-                    <i class="icon-desktop"></i>
-                    <h3 class="title top_15 bottom_15">Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p> 
-                </div>
-            </div>
-        </div>
+			<div class="owl-carousel owl-theme features" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1"  data-wow-delay="0.1s">
+                @foreach($services as $service)
+				<div class="item service text-center">
+	                <i class="icon-desktop"></i>
+	                <h3 class="title top_15 bottom_15">{{$service->title}}</h3>
+	                <p>{{$service->content}}</p> 
+                    </div>
+                 @endforeach
+			</div>
+		</div>
         <div class="svg-wave">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="248" viewBox="0 0 3594 343">
               <path d="M-7,311.773S857.694,141.03,1933,270.8c1113.66,134.4,1661,39.972,1661,39.972V0H-8Z"/>
             </svg>
         </div> 
-    </section>
+	</section>
 
-    <!-- PORTFOLIO SECTION
-    ================================================== -->
-      
-        <!-- BLOG SECTION
-        ================================================== -->
+
+        <!-- BLOG SECTION -->
         <section id="blog" class="blog type-1">
             <div class="container">
                 <div class="section-title padding_90 text-center">
-                    <span>OUR POSTS</span>
+                    <span>BlOG POSTS</span>
                     <h2 class="title">Recent Blog Posts</h2>
                 </div>
 
@@ -102,7 +147,7 @@
                     
                 </div> <!-- row end -->
                 <div class="col-md-12 text-center padding_90">
-                    <a href="{{route('view.allblogposts')}}" class="site-btn wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="-100"> View All </a>
+                    <a href="{{route('view.allblogposts')}}" class="site-btn wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="-100"> View All Blogs </a>
                 </div>
             </div>
             <div class="svg-wave">
@@ -112,8 +157,9 @@
             </div> 
         </section>
         
-        <!-- CONTACT SECTION
-        ================================================== -->
+        <!-- CONTACT SECTION-->
+        
+
         <section id="contact" class="contact type-1 bg-pink">
             <div class="container">
                 <div class="section-title padding_90 text-center">
@@ -123,37 +169,51 @@
                 <!-- Contact Information -->
                 <div class="information col-md-8 offset-md-2">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 info text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-md-4 col-sm-6 info text-center wow fadeInUp" data-wow-delay="0.2s">
                             <i class="icon-phone"></i>
-                            <p>49 0216 514 25 25 <br> 0216 514 25 25</p>
+                            <p>{{$contact->phone}}</p>
                         </div>
-                        <div class="col-md-4 col-sm-6 info text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-md-4 col-sm-6 info text-center wow fadeInUp" data-wow-delay="0.3s">
                             <i class="icon-map"></i>
-                            <p>1444 S. Alameda Street Los Angeles,<br> California 90021</p>
+                            <p>{{$contact->address}}</p>
                         </div>
-                        <div class="col-md-4 col-sm-12 info text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-md-4 col-sm-12 info text-center wow fadeInUp" data-wow-delay="0.4s">
                             <i class="icon-envelope"></i>
-                            <p>info@alberto.com <br> contact@alberto.com</p>
+                            <p>{{$contact->email}}</p>
                         </div>
                     </div>
                 </div>
 
+
+
                 <!-- Contact Form -->
-                <form class="contact-form top_90 col-md-12 padding_90 wow fadeInUp" data-wow-delay="0.1s">
+                <form class="contact-form top_90 col-md-12 padding_90 wow fadeInUp" data-wow-delay="0.3s" action="{{route('store.message')}}" method="post">
+                 @if(Session::has('flash_message_success'))
+                  <div class="row">
+                    <div class="col-md-4"></div>
+                        <div class="alert alert-success text-center col-md-4">
+                            <button type="button" class="close" data-dismiss="alert">X</button>
+                                <strong>{!! session('flash_message_success') !!}</strong>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                    @endif
+
+                    @csrf
                     <div class="col-md-8 offset-md-2">
                         <div class="row">
                             <!--Name-->
                             <div class="col-md-6">
-                                <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name">
+                                <input id="con_name" name="name" class="form-inp requie" type="text" placeholder="Name">
                             </div>
                             <!--Email-->
                             <div class="col-md-6">
-                                <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
+                                <input id="con_email" name="email" class="form-inp requie" type="text" placeholder="Email">
                             </div>
                             <div class="col-md-12">
                                 <!--Message-->
-                                <textarea name="con_message" id="con_message" class="requie" placeholder="How can we help you?" rows="8"></textarea>
-                                <button id="con_submit" class="site-btn top_30 pull-right" type="submit">Send a Message</button>
+                                <textarea name="message" id="con_message" class="requie" placeholder="Any message for me?" rows="8"></textarea>
+                                <button id="submit" class="site-btn top_30 pull-right" type="submit">Send Message</button>
                             </div>
                         </div>
                     </div>
@@ -163,5 +223,6 @@
 
         </div> <!-- wrapper end -->
 
-     
+
+      
 @endsection
