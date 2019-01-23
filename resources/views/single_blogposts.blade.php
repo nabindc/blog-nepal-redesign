@@ -1,3 +1,10 @@
+<?php
+   use App\Http\Controllers\Controller;
+   $mainCategories = Controller::mainCategories();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -43,7 +50,7 @@
     <div class="wrapper">
 
     <header class="type-1 dark">
-        <a class="logo float-left" href="{{route('index')}}"><img src="{{asset('public/frontend/images/mylogo.png')}}" alt="" height="16"></a>
+        <a class="logo float-left" href="{{route('index')}}"><img src="{{asset('public/frontend/images/black.png')}}" alt="" height="16"></a>
         <nav class="float-right">
             <ul>
                 <li><a href="{{route('index')}}#home">Home</a></li>
@@ -132,11 +139,14 @@
                             </ul>
                         </div>
                         <!-- Recent Post -->
+
+                <!-- categories lists section -->
+
                         <div class="categories top_45">
                             <h3 class="widget-title">Categories</h3>
-                            @foreach($categories as $cat)
+                           @foreach($mainCategories as $cat)
                             <ul class="top_30">
-                                <li><a href="">{{$cat->name}}</a>
+                                <li><a href="{{route('view.categoriesblogposts', $cat->slug)}}">{{$cat->name}}</a>
                                 </li>
                             </ul>
                             @endforeach

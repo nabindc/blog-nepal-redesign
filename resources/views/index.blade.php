@@ -15,7 +15,8 @@
     <div class="wrapper">
 
     <header class="type-1">
-        <a class="logo float-left"><img src="{{asset('public/frontend/images/whitelogo.png')}}" alt="" height="16"></a>
+        <a class="logo float-left"><img src="{{asset('public/frontend/images/white.png')}}" alt="" height="16"></a>
+        <!-- <a class="centered" href="" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">Nabin D.C</a> -->
         <nav class="nav float-right">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -32,7 +33,7 @@
     </header> 
 
     <header class="type-1 fixed">
-        <a class="logo float-left"><img src="{{asset('public/frontend/images/mylogo.png')}}" alt="" height="16"></a>
+        <a class="logo float-left"><img src="{{asset('public/frontend/images/black.png')}}" alt="" height="16"></a>
         <nav class="nav float-right">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -188,6 +189,9 @@
 
                 <!-- Contact Form -->
                 <form class="contact-form top_90 col-md-12 padding_90 wow fadeInUp" data-wow-delay="0.3s" action="{{route('store.message')}}" method="post">
+                   @csrf
+
+                   
                  @if(Session::has('flash_message_success'))
                   <div class="row">
                     <div class="col-md-4"></div>
@@ -199,7 +203,7 @@
                 </div>
                     @endif
 
-                    @csrf
+                    
                     <div class="col-md-8 offset-md-2">
                         <div class="row">
                             <!--Name-->

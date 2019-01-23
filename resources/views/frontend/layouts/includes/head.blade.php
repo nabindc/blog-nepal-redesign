@@ -3,7 +3,7 @@
 <head> 
 <title>A_xut's Blog</title>
 <meta charset="UTF-8">
-<meta name="description" content="Rize Portfolio Template">
+<meta name="description" content="A_xut's Portfolio Template">
 <meta name="keywords" content="personal, portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

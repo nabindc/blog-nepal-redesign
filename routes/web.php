@@ -13,15 +13,17 @@
 
 Route::get('/', 'IndexController@index')->name('index');
 Route::get('/all-blog-posts', 'IndexController@viewAllBlogPost')->name('view.allblogposts');
+Route::get('/categories-posts/{slug}', 'IndexController@viewCategoriesBlogPost')->name('view.categoriesblogposts');
 Route::get('/single-blog-post/{slug}', 'IndexController@viewSingleBlogPost')->name('view.singleblogposts');
 Route::post('/storepost', 'IndexController@storeMessage')->name('store.message');
+Route::get('google-line-chart', 'ChartController@googleLineChart');
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::match(['get', 'post'], '/adminLogin', 'AdminController@login')->name('admin.login');
+Route::match(['get', 'post'], '/login', 'AdminController@login')->name('admin.login');
 
 Route::group(['middleware' => ['auth']], function(){
 Route::get('/admin/dashboard', 'AdminController@dashboard')->name('admin.dashboard');

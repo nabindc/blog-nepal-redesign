@@ -144,7 +144,7 @@ body {
 
             <form class="form-signin"  action="{{route('admin.login')}}" method="post">
 
-            @csrf
+           @csrf
 
 
               <div class="form-label-group">

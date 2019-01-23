@@ -43,7 +43,7 @@
     <div class="wrapper">
 
     <header class="type-1 dark">
-        <a class="logo float-left" href="{{route('index')}}"><img src="{{asset('public/frontend/images/mylogo.png')}}" alt="" height="16"></a>
+        <a class="logo float-left" href="{{route('index')}}"><img src="{{asset('public/frontend/images/black.png')}}" alt="" height="16"></a>
         <nav class="float-right">
             <ul>
                 <li><a href="{{route('index')}}#home">Home</a></li>
