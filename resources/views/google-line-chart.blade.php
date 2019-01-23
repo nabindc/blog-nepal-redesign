@@ -9,7 +9,7 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable(visitor);
         var options = {
-          title: 'Site Visitor Line Chart',
+          title: 'Site Visitor "click" & "View" Line Chart',
           curveType: 'function',
           legend: { position: 'bottom' }
         };
